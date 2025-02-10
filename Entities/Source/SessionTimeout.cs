@@ -1,3 +1,5 @@
+using GoC.WebTemplate.Entities.Source;
+
 using Newtonsoft.Json;
 
 namespace GoC.WebTemplate.Components.Entities
@@ -59,5 +61,17 @@ namespace GoC.WebTemplate.Components.Entities
         /// Additional data to send with the request.
         /// </summary>
         public string AdditionalData { get; set; }
+
+        /// <summary>
+        /// URL used for the Sign In action once the session has expired.
+        /// </summary>
+        [JsonProperty(PropertyName = "signInUrl")]
+        public string SignInUrl { get; set; }
+
+        /// <summary>
+        /// Optional button text and message elements to override the defaults.
+        /// </summary>
+        [JsonProperty(PropertyName = "textOverrides")]
+        public SessionTimeoutTextOverrides TextOverrides { get; set; }
     }
 }

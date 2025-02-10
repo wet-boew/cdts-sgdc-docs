@@ -31,6 +31,7 @@
               </xs:simpleType>
             </xs:attribute>
             <xs:attribute name="logoutUrl" type="xs:string" use="required" />
+            <xs:attribute name="signInUrl" type="xs:string" use="optional" />
             <xs:attribute name="refreshCallBackUrl" type="xs:string" use="optional" />
             <xs:attribute name="refreshOnClick" type="xs:boolean" use="optional" />
             <xs:attribute name="refreshLimit" type="xs:positiveInteger" use="optional" />
